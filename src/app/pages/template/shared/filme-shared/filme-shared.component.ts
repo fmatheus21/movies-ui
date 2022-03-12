@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MovieContent } from 'src/app/controller/http/movie.content';
 
 @Component({
   selector: 'app-filme-shared',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filme-shared.component.css']
 })
 export class FilmeSharedComponent implements OnInit {
+
+  movies: MovieContent = new MovieContent();
 
   constructor() { }
 
