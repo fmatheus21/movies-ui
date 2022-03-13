@@ -40,7 +40,6 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    AppRoutingModule,
     FormsModule,
     CoreModule,
     HttpClientModule,

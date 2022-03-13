@@ -4,6 +4,8 @@ import { FilmeSharedComponent } from './filme-shared/filme-shared.component';
 import { BannerSharedComponent } from './banner-shared/banner-shared.component';
 import { FooterSharedComponent } from './footer-shared/footer-shared.component';
 import { LoginSharedComponent } from './login-shared/login-shared.component';
+import { KnobModule } from 'primeng/knob';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -15,7 +17,9 @@ import { LoginSharedComponent } from './login-shared/login-shared.component';
     LoginSharedComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    KnobModule
   ],
   exports: [
     FooterSharedComponent,
