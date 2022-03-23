@@ -5271,3 +5271,35 @@ li.flex-active-slide.progression_studios_animate_right
     display: none;
   }
 }
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+  border-radius: 5px !important;
+  color: #999999 !important;
+  background: rgba(0, 0, 0, 0.03) !important;
+  border: 1px solid rgba(0, 0, 0, 0.09) !important;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  color: #ffffff !important;
+  border-color: #3db13d !important;
+  background: #3db13d !important;
+}
+
+.p-paginator .p-paginator-first,
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next,
+.p-paginator .p-paginator-last {
+  border-radius: 5px !important;
+  color: #999999 !important;
+  background: rgba(0, 0, 0, 0.03) !important;
+  border: 1px solid rgba(0, 0, 0, 0.09) !important;
+}
+
+.p-paginator .p-paginator-first:not(.p-disabled):not(.p-highlight):hover,
+.p-paginator .p-paginator-prev:not(.p-disabled):not(.p-highlight):hover,
+.p-paginator .p-paginator-next:not(.p-disabled):not(.p-highlight):hover,
+.p-paginator .p-paginator-last:not(.p-disabled):not(.p-highlight):hover {
+  color: #ffffff !important;
+  border-color: #7db67d !important;
+  background: #7db67d !important;
+}

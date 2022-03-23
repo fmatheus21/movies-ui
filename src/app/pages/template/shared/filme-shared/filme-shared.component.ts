@@ -8,36 +8,30 @@ import { MovieService } from 'src/app/controller/service/movie.service';
 @Component({
   selector: 'app-filme-shared',
   templateUrl: './filme-shared.component.html',
-  styleUrls: ['./filme-shared.component.css']
+  styleUrls: ['./filme-shared.component.css'],
 })
 export class FilmeSharedComponent implements OnInit {
-
   //movies: MovieResponse[] = [];
   movieObject: MovieContent = new MovieContent();
   filter: MovieFilter = new MovieFilter();
   paginator: Paginator = new Paginator();
 
-  constructor(
-    private movieService: MovieService
-  ) { }
+  constructor(private movieService: MovieService) {}
 
   ngOnInit(): void {
     this.findAllByFilter();
   }
 
   public findAllByFilter() {
-
-    this.movieService.findAllByFilter(this.filter, this.paginator.page, this.paginator.size)
+    this.movieService
+      .findAllByFilter(this.filter, this.paginator.page, this.paginator.size)
       .subscribe((data: MovieContent) => {
         // var content = JSON.parse(JSON.stringify(data));
         this.movieObject = data;
         console.log(this.movieObject);
         console.log(data);
-        // this.loadPaginator(data);
+        this.loadPaginator(data);
       });
-
-
-
   }
 
   private loadPaginator(data: any) {
@@ -57,5 +51,4 @@ export class FilmeSharedComponent implements OnInit {
     this.paginator.size = event.rows;
     this.findAllByFilter();
   }
-
 }

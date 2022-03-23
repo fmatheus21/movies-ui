@@ -8,5 +8,5 @@ export class Paginator {
   last!: boolean;
   number!: number;
   empty!: boolean;
-  pagesOptions: number[] = [10, 20, 50];
+  pagesOptions: number[] = [1, 10, 20, 50];
 }

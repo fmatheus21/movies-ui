@@ -6,26 +6,21 @@ import { FooterSharedComponent } from './footer-shared/footer-shared.component';
 import { LoginSharedComponent } from './login-shared/login-shared.component';
 import { KnobModule } from 'primeng/knob';
 import { FormsModule } from '@angular/forms';
-
-
+import { PaginatorModule } from 'primeng/paginator';
 
 @NgModule({
   declarations: [
     FilmeSharedComponent,
     BannerSharedComponent,
     FooterSharedComponent,
-    LoginSharedComponent
+    LoginSharedComponent,
   ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    KnobModule
-  ],
+  imports: [CommonModule, FormsModule, KnobModule, PaginatorModule],
   exports: [
     FooterSharedComponent,
     FilmeSharedComponent,
     BannerSharedComponent,
-    LoginSharedComponent
-  ]
+    LoginSharedComponent,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}
