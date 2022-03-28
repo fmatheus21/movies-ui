@@ -127,6 +127,20 @@ Conteúdos
 ![Node](https://img.shields.io/static/v1?label=node&message=14.15.0&color=green)
 ![NPM](https://img.shields.io/static/v1?label=npm&message=6.14.8&color=green)
 
+</br></br>
+
+<div id="demonstracao"></div>
+  
+# Demonstração
+<pre>
+<div>
+<p align="center">
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/fmatheus21/movies-api/blob/main/_files/demonstracao.gif">
+<img src="https://github.com/fmatheus21/movies-api/blob/main/_files/demonstracao.gif" alt="Logo" style="max-width:100%;" ></a>
+</p>
+</div>
+</pre>
+
 
 
 
