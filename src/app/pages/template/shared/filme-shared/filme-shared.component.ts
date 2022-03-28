@@ -26,12 +26,13 @@ export class FilmeSharedComponent implements OnInit {
     this.movieService
       .findAllByFilter(this.filter, this.paginator.page, this.paginator.size)
       .subscribe((data: MovieContent) => {
-        // var content = JSON.parse(JSON.stringify(data));
         this.movieObject = data;
-        console.log(this.movieObject);
-        console.log(data);
         this.loadPaginator(data);
       });
+  }
+
+  public onKeyFindAllByFilter() {
+    this.findAllByFilter();
   }
 
   private loadPaginator(data: any) {
